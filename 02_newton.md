@@ -50,5 +50,8 @@ That is, solve "$Ax = b$".  Then update:
 
   $$ x_{k+1} := x_k + \delta $$
 
-
+Student Addition (Vedang Vyas 84818146):
+\begin{thm}[Error in Polynomial Interpolation]
+Let $f \in C^{n+1}$, and suppose that $p_n$ is the interpolating polynomial of $f$ at $\{x_0 < \ldots < x_n\}$. Define $$\pi(x) = \Pi_{k=0}^n (x - x_k)$$ and $$e(x) = f(x) - p_n(x).$$ Then, there exists a $\xi \in (x_0, x_n)$ such that $$e(x) = \pi(x)\cdotf^(n+1)(\xi).$$
+\end{thm}
 
